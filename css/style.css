@@ -1,0 +1,154 @@
+#showcase {
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+
+#showcase a {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    color: #fff;
+    padding: 1.5em 3em;
+    background: rgba(0, 0, 0, .8);
+    border: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+nav.black {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.first-section {
+    border-top: 1px solid #555;
+}
+
+.first-section div {
+    padding: 2em 0;
+}
+
+.first-section p {
+    padding: 1em;
+}
+
+.second-section {
+    background: #555;
+    color: #fff;
+    padding-bottom: 1em;
+}
+
+.second-section img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+}
+
+.second-section .container-fluid {
+    padding: 2em 0;
+}
+
+.second-section .paragraph {
+    padding: 1em 0 1em 0;
+    margin: 0 10px 0 10px;
+}
+
+.second-section .box-text {
+    padding: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.box {
+    background: #666;
+    box-shadow: 0 1px 5px #999;
+    margin: 1rem 2rem;
+}
+
+.box-title {
+    padding-top: 15px;
+}
+
+.third-section {
+    border-top: 1px solid #000;
+    background: #fff;
+    color: #000;
+    padding-bottom: 2em;
+}
+
+.third-section div.container-fluid {
+    padding: 2em 0;
+}
+
+.third-section p {
+    padding: 1em;
+}
+
+.third-section form {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 2em;
+    border-radius: 1%;
+    transition: .3s;
+}
+
+.third-section button {
+    color: #000;
+    border: 1px solid #000;
+}
+
+footer {
+    background: #555;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 1em;
+}
+
+footer .end-title {
+    padding-top: .5em;
+}
+
+#home {
+    transition: .3s;
+}
+
+#home.begone {
+    opacity: 0;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 1rem 3rem;
+    }
+    .brand-image {
+        width: 200px;
+    }
+    .third-section form {
+        width: 350px;
+    }
+}
